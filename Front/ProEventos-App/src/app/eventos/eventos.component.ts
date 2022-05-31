@@ -11,8 +11,8 @@ export class EventosComponent implements OnInit {
   public eventos: any ;
 
   constructor(private http: HttpClient) { }
-// primeiro método a ser chamado
-  ngOnInit() {
+
+  ngOnInit(): void {
     this.getEventos();
   }
 
@@ -20,7 +20,5 @@ export class EventosComponent implements OnInit {
     this.http.get('https://localhost:7194/api/eventos').subscribe(
       response => this.eventos = response,
       error => console.log(error)
-    );
-  }
-
-}
+  );
+  }}

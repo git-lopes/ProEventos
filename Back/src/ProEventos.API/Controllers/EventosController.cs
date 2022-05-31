@@ -10,7 +10,6 @@ namespace ProEventos.API.Controllers;
 public class EventosController : ControllerBase
     {
 
-       
         private readonly DataContext _context;
         public EventosController(DataContext context)
         {

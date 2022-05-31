@@ -27,7 +27,7 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
-//corrige o erro do Cors - colocado no startup versão abaix de 6 do dotnet
+//corrige o erro do Cors - colocado no startup versão abaixo de 6 do dotnet
 app.UseCors(x => x.AllowAnyHeader()
                   .AllowAnyMethod()
                   .AllowAnyOrigin());
