@@ -2,3 +2,11 @@
 
 /* Importing Bootstrap SCSS file. */
 @import "./node_modules/bootstrap/scss/bootstrap";
+
+
+.thead-dark {
+  th {
+    color: #FBEFEF;
+    background-color: #19070B;
+  }
+}
